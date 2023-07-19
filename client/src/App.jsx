@@ -1,14 +1,18 @@
 // import { useState } from 'react'
-
+import Canvas from './canvas'
+import Customizer from './pages/Customizer'
+import Home   from './pages/Home'
 import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1 className="head-text">R3F Clothing APP</h1>
-    </div>
+    <main className="app transition-all">
+      <Home />
+      <Canvas />
+      <Customizer />
+    </main>
   )
 }
 
