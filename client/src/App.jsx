@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import './App.css'
 
@@ -6,9 +6,9 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-      HI
-    </>
+    <div>
+      <h1 className="head-text">R3F Clothing APP</h1>
+    </div>
   )
 }
 
