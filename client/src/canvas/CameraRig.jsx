@@ -41,7 +41,7 @@ const CameraRig = ({ children }) => {
 }
 
 CameraRig.propTypes = {
-    children: PropTypes.object
+    children: PropTypes.array
 }
 
 export default CameraRig
