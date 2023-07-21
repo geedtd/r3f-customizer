@@ -8,7 +8,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <main className="app transition-all">
+    <main className="app transition-all ease-in">
       <Home />
       <Canvas />
       <Customizer />

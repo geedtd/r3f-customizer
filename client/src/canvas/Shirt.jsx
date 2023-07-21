@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { easing } from 'maath'
 import { useSnapshot } from 'valtio'
 import { useFrame } from '@react-three/fiber'
@@ -46,6 +47,11 @@ const Shirt = () => {
                         depthWrite={true}
                     />
                 )}
+            </mesh>
+            <mesh
+                castShadow
+            >
+
             </mesh>
         </group>
     )
