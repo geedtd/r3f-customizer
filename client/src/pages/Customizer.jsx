@@ -40,6 +40,8 @@ const Customizer = () => {
             default:
                 return null
         }
+
+        
     }
 
     const handleDecals = (type, result) => {
@@ -63,7 +65,15 @@ const Customizer = () => {
             default:
                 state.isLogoTexture = true
                 state.isFullTexture = false
+                break;
         }
+
+        setActiveFilterTab((previousState) => {
+            return {
+                ...previousState,
+                [tabName]: !previousState[tabName]
+            }
+        })
     }
 
     const readFile = (type) => {
@@ -116,7 +126,7 @@ const Customizer = () => {
                                 key={tab.name}
                                 tab={tab}
                                 isFilterTab 
-                                isActiveTab=""
+                                isActiveTab={activeFilterTab[tab.name]}
                                 handleClick={() => handleActiveFilterTab(tab.name)}
                             />
                         ))}
