@@ -6,6 +6,8 @@ import PropTypes from 'prop-types'
 
 import state from '../store'
 
+//this code enables the camera to sway in different directions in a smooth form through dampening and changing the coordinates'
+
 const CameraRig = ({ children }) => {
 
     const group = useRef()

@@ -6,6 +6,8 @@ import { Decal, useGLTF, useTexture } from '@react-three/drei'
 
 import state from '../store'
 
+
+// this code grabs the shirt model from the public directory and contains the functionality for applying full textures all over the model, as well as a decal over a smaller area
 const Shirt = () => {
 
     const snap = useSnapshot(state)

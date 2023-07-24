@@ -1,4 +1,5 @@
 import CustomButton from "./CustomButton"
+import PropTypes from 'prop-types'
 
 const FilePicker = ({ file, setFile, readFile }) => {
     return (
@@ -35,6 +36,12 @@ const FilePicker = ({ file, setFile, readFile }) => {
             </div>
         </div>
     )
+}
+
+FilePicker.propTypes = {
+    setFile: PropTypes.func,
+    readFile: PropTypes.func,
+    file: PropTypes.any
 }
 
 export default FilePicker

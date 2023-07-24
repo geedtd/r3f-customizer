@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { useSnapshot } from "valtio"
 
@@ -16,8 +16,8 @@ const Customizer = () => {
     const snap = useSnapshot(state)
 
     const [file, setFile] = useState('')
-    const [prompt, setPrompt] = useState('')
-    const [generatingImg, setGeneratingImg] = useState(false)
+    // const [prompt, setPrompt] = useState('')
+    // const [generatingImg, setGeneratingImg] = useState(false)
 
     const [activeEditorTab, setActiveEditorTab] = useState('')
     const [activeFilterTab, setActiveFilterTab] = useState({
