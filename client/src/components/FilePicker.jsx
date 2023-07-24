@@ -5,16 +5,16 @@ const FilePicker = ({ file, setFile, readFile }) => {
         <div className="filepicker-container">
             <div className="flex-1 flex flex-col">
                 <input 
-                    id="file-uplaod"
+                    id="file-upload"
                     type="file"
                     accept="image/*"
-                    onChange={() => setFile(e.target.files[0])}
+                    onChange={(e) => setFile(e.target.files[0])}
                 />
                 <label htmlFor="file-upload" className="filepicker-label">
                     Upload File
                 </label>
 
-                <p className="mt-2 text-gray-5-- text-xs truncate">
+                <p className="mt-2 text-gray-500 text-xs truncate">
                     {file === "" ? "No file chosen" : file.name }
                 </p>
             </div>

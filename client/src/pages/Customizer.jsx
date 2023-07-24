@@ -47,7 +47,7 @@ const Customizer = () => {
 
         state[decalType.stateProperty] = result
 
-        if(!activeFilterTab[decalType.FilterTab]) {
+        if(!activeFilterTab[decalType.filterTab]) {
             handleActiveFilterTab(decalType.filterTab)
         }
     }
@@ -117,7 +117,7 @@ const Customizer = () => {
                                 tab={tab}
                                 isFilterTab 
                                 isActiveTab=""
-                                handleClick={() => {}}
+                                handleClick={() => handleActiveFilterTab(tab.name)}
                             />
                         ))}
                     </motion.div>
@@ -125,6 +125,6 @@ const Customizer = () => {
             )}
         </AnimatePresence>
     )
-}
+} 
 
 export default Customizer
