@@ -38,7 +38,7 @@ const Home = () => {
                                 type="filled"
                                 title="Customize Your Design"
                                 handleClick={() => state.intro = false}
-                                customStyle='w-fit px-4 py-2.5 font-bold text-sm'
+                                customStyles='px-4 py-2.5 font-bold text-sm w-fit'
                             />
                         </motion.div>
                     </motion.div>

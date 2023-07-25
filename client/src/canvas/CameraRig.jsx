@@ -17,12 +17,14 @@ const CameraRig = ({ children }) => {
     useFrame((state, delta) => {
         const isBreakPoint = window.innerWidth <= 1260;
         const isMobile = window.innerWidth <= 600;
+        const isSmallMobile = window.innerWidth <= 490;
 
         //setting initial position of Shirt Model
         let targetPosition = [-0.4, 0, 2];
         if ( snap.intro ) {
             if(isBreakPoint) targetPosition = [0, 0, 2];
             if(isMobile) targetPosition = [0, 0.2, 2.5];
+            if(isSmallMobile) targetPosition = [0, 0.25, 3]
         } else {
             if(isMobile) targetPosition = [0, 0, 2.5]
             else targetPosition = [0, 0, 2];
