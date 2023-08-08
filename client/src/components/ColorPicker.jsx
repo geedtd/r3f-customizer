@@ -13,6 +13,7 @@ const ColorPicker = () => {
                 disableAlpha    
                 onChange={(color) => state.color = color.hex} 
             />
+            <span style={{justifyContent: "center", alignItems: "center"}}>Choose a Shirt Color</span>
         </div>
     )
 }

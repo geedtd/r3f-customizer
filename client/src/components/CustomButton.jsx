@@ -33,7 +33,7 @@ const CustomButton = ({ title, type, customStyles, handleClick }) => {
 CustomButton.propTypes = {
     title: PropTypes.string,
     type: PropTypes.string,
-    // customStyles: PropTypes.string,
+    customStyles: PropTypes.string,
     handleClick: PropTypes.func
 
 }
