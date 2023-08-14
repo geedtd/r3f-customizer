@@ -4,6 +4,7 @@ let logoChange = () => {
     let numVal = 0
     numVal =  Math.random() * 5
     console.log(numVal)
+    
     return (numVal > 3) ? './R&threeL.png' : './threejs.png'
 }
 
